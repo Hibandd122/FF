@@ -143,15 +143,12 @@ def reopen_code(account):
 
 # Chương trình chính
 if __name__ == "__main__":
-    accounts_file = 'acc.txt'
-    accounts = read_accounts(accounts_file)
-    while accounts:
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print(f"[+] Thành công: {login_count}")
-        print(f"[!] Thất bại: {thatbai_count}")
-        print(f"[+] Tổng số acc viotp trên 10k: {viotp_over_10k}")
-        print(f"[+] Tổng số acc viotp dưới 10k: {viotp_under_10k}")
-        print(f"[+] Tổng số acc dưới 1k: {viotp_under_1k}")
-        account = accounts.pop(0)
-        reopen_code(account)
-        save_accounts(accounts_file, accounts)
+    accounts = ["0378588867:160299"]
+    print(f"[+] Thành công: {login_count}")
+    print(f"[!] Thất bại: {thatbai_count}")
+    print(f"[+] Tổng số acc viotp trên 10k: {viotp_over_10k}")
+    print(f"[+] Tổng số acc viotp dưới 10k: {viotp_under_10k}")
+    print(f"[+] Tổng số acc dưới 1k: {viotp_under_1k}")
+    account = accounts.pop(0)
+    reopen_code(account)
+    save_accounts(accounts_file, accounts)
