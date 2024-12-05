@@ -1,0 +1,7 @@
+pkg update && pkg upgrade
+pkg install python
+pip install selenium
+apt install wget
+wget https://chromedriver.storage.googleapis.com/$(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
